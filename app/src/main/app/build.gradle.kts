@@ -1,1 +1,17 @@
-```kotlin plugins { id("com.android.application") id("org.jetbrains.kotlin.android") } android { namespace "com.jarvis.android" compileSdk
+plugins {
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
+}
+
+android {
+    namespace = "com.example.jarvis"
+    compileSdk = 35
+
+    defaultConfig {
+        applicationId = "com.example.jarvis"
+        minSdk = 24
+        targetSdk = 35
+        versionCode = 1
+        versionName = "1.0"
+    }
+}
